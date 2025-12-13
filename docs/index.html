@@ -4,129 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RAG-Powered Educational Content Generator - Academic Portfolio">
-    <meta name="keywords" content="RAG, AI, Machine Learning, Education, Northeastern University">
-    <meta name="author" content="Pranesh, Linata Deshmukh">
-    <title>RAG-Powered Educational Content Generator | Academic Portfolio</title>
+    <title>RAG-Powered Educational Content Generator | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
             <div class="nav-brand">
-                <span class="brand-icon">🎓</span>
-                <span class="brand-text">RAG Educational Generator</span>
+                <h1>RAG Educational Generator</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#abstract" class="nav-link">Abstract</a></li>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#architecture" class="nav-link">Architecture</a></li>
-                <li><a href="#implementation" class="nav-link">Implementation</a></li>
-                <li><a href="#results" class="nav-link">Results</a></li>
-                <li><a href="#resources" class="nav-link">Resources</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#demo">Demo</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="academic-tag">Academic Research Project</div>
                 <h1 class="hero-title">RAG-Powered Educational Content Generator</h1>
-                <p class="hero-subtitle">An Advanced AI System Combining Retrieval-Augmented Generation, Prompt
-                    Engineering, and Reinforcement Learning for Personalized Educational Experiences</p>
-
-                <div class="project-metadata">
-                    <div class="metadata-item">
-                        <strong>Institution:</strong> Northeastern University
-                    </div>
-                    <div class="metadata-item">
-                        <strong>Course:</strong> Generative AI - Prompt Engineering
-                    </div>
-                    <div class="metadata-item">
-                        <strong>Authors:</strong> Pranesh, Linata Deshmukh
-                    </div>
-                    <div class="metadata-item">
-                        <strong>Date:</strong> December 2024
-                    </div>
-                </div>
-
-                <div class="cta-buttons">
-                    <a href="https://github.com/PK0024/RAG-Educational-Content-Generator" class="btn btn-primary"
-                        target="_blank">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                        </svg>
-                        GitHub Repository
-                    </a>
-                    <a href="#" class="btn btn-secondary">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                            <path
-                                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
-                        </svg>
-                        Video Demonstration
-                    </a>
-                    <a href="project_documentation/FINAL_SUBMISSION_DOCUMENTATION.html" class="btn btn-outline">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                            <path
-                                d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z" />
-                            <path
-                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-                        </svg>
-                        Full Documentation
-                    </a>
+                <p class="hero-subtitle">An intelligent system that transforms PDF educational materials into
+                    interactive learning experiences using Retrieval-Augmented Generation, Q-Learning, and Thompson
+                    Sampling.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary btn-large">View Demo</a>
+                    <a href="https://github.com/yourusername/RAG-Powered-Educational-Content-Generator"
+                        class="btn btn-secondary btn-large" target="_blank">View Code</a>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Abstract Section -->
-    <section id="abstract" class="section">
+    <!-- Overview Section -->
+    <section id="overview" class="section">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">Research Summary</div>
-                <h2 class="section-title">Abstract</h2>
-            </div>
-            <div class="abstract-content">
-                <p class="abstract-text">
-                    This research project presents a comprehensive educational platform that leverages
-                    <strong>Retrieval-Augmented Generation (RAG)</strong>
-                    and <strong>advanced prompt engineering</strong> to transform traditional PDF-based learning
-                    materials into interactive, AI-powered educational experiences.
-                    The system implements a sophisticated RAG pipeline using LlamaIndex and Pinecone vector database,
-                    combined with OpenAI's GPT-4 Turbo for intelligent
-                    content generation and question answering.
-                </p>
-                <p class="abstract-text">
-                    A key innovation is the implementation of an <strong>adaptive competitive quiz system</strong> that
-                    employs reinforcement learning algorithms
-                    (<strong>Q-Learning</strong> and <strong>Thompson Sampling</strong>) to dynamically adjust question
-                    difficulty based on real-time student performance.
-                    This creates a personalized learning trajectory that optimizes for both engagement and knowledge
-                    retention.
-                </p>
-                <div class="key-contributions">
-                    <h3>Key Contributions</h3>
-                    <ul>
-                        <li><strong>Systematic Prompt Engineering:</strong> Seven-category question classification with
-                            dynamic prompt generation</li>
-                        <li><strong>Hybrid RAG Implementation:</strong> Novel chunking strategy combining semantic and
-                            page-based segmentation</li>
-                        <li><strong>Adaptive Learning Integration:</strong> Dual-algorithm approach (Q-Learning +
-                            Thompson Sampling) for difficulty optimization</li>
-                        <li><strong>Comprehensive Evaluation:</strong> LLM-based semantic evaluation for short-answer
-                            questions achieving 85% agreement with human experts</li>
-                    </ul>
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p>
+                        This project is a comprehensive educational platform that leverages <strong>Retrieval-Augmented
+                            Generation (RAG)</strong> to help students and educators interact with PDF materials in
+                        innovative ways. The system processes uploaded PDFs, extracts and indexes content using vector
+                        embeddings, and enables users to chat with the material, generate quizzes, summaries, and
+                        flashcards.
+                    </p>
+                    <p>
+                        The standout feature is an <strong>adaptive competitive quiz system</strong> that uses
+                        <strong>Q-Learning</strong> and <strong>Thompson Sampling</strong> algorithms to dynamically
+                        adjust question difficulty based on user performance, creating a personalized learning
+                        experience.
+                    </p>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Core Features</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">300</div>
+                        <div class="stat-label">Max Pages/PDF</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">ML Algorithms</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,104 +92,92 @@
     <!-- Features Section -->
     <section id="features" class="section section-alt">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">System Capabilities</div>
-                <h2 class="section-title">Core Features</h2>
-                <p class="section-description">
-                    A comprehensive suite of AI-powered tools designed to enhance student learning and engagement
-                </p>
-            </div>
+            <h2 class="section-title">Key Features</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-header">
-                        <div class="feature-icon">📄</div>
-                        <div class="feature-badge">Core</div>
-                    </div>
-                    <h3>Intelligent Document Processing</h3>
-                    <p>Advanced PDF processing pipeline supporting up to 300 pages per document with multi-file upload
-                        capabilities. Implements hybrid chunking strategy preserving page boundaries while ensuring
-                        semantic coherence.</p>
-                    <div class="feature-specs">
-                        <span>• Chunk size: 1024 chars</span>
-                        <span>• Overlap: 200 chars</span>
-                        <span>• Namespace isolation</span>
-                    </div>
+                    <div class="feature-icon">📄</div>
+                    <h3>PDF Upload & Processing</h3>
+                    <p>Upload and index PDF documents up to 300 pages. Supports multiple file uploads with intelligent
+                        text extraction and chunking.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-header">
-                        <div class="feature-icon">💬</div>
-                        <div class="feature-badge">RAG</div>
-                    </div>
-                    <h3>Context-Aware Q&A System</h3>
-                    <p>Retrieval-augmented generation system with systematic prompt engineering. Features question-type
-                        detection (7 categories), dynamic prompt generation, and intelligent fallback to general
-                        knowledge.</p>
-                    <div class="feature-specs">
-                        <span>• 90% retrieval relevance</span>
-                        <span>• 2-5s response time</span>
-                        <span>• Source citation</span>
-                    </div>
+                    <div class="feature-icon">💬</div>
+                    <h3>RAG-Powered Chat</h3>
+                    <p>Ask questions about uploaded material with intelligent fallback. Uses systematic prompting
+                        strategies and context management for accurate responses.</p>
                 </div>
-
                 <div class="feature-card">
-                    <div class="feature-header">
-                        <div class="feature-icon">🎯</div>
-                        <div class="feature-badge">Innovation</div>
-                    </div>
+                    <div class="feature-icon">🏆</div>
                     <h3>Adaptive Competitive Quiz</h3>
-                    <p>Reinforcement learning-based quiz system employing Q-Learning for policy optimization and
-                        Thompson Sampling for exploration-exploitation balance. Dynamically adjusts difficulty in
-                        real-time.</p>
-                    <div class="feature-specs">
-                        <span>• Q-Learning (α=0.1, γ=0.9)</span>
-                        <span>• Thompson Sampling</span>
-                        <span>• 90% convergence rate</span>
+                    <p>AI-powered quiz system using Q-Learning and Thompson Sampling. Difficulty adapts in real-time
+                        based on performance with reward-based learning.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Quiz Generation</h3>
+                    <p>Generate contextual quizzes with multiple choice and short answer questions. Includes hints,
+                        explanations, and LLM-based answer evaluation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3>Summary Generation</h3>
+                    <p>Create comprehensive summaries of varying lengths (short, medium, long) tailored to the document
+                        content.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎴</div>
+                    <h3>Flashcard Generation</h3>
+                    <p>Generate interactive flashcards for studying key concepts from the uploaded materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="section">
+        <div class="container">
+            <h2 class="section-title">Technology Stack</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Python 3.11</span>
+                        <span class="tech-tag">LlamaIndex</span>
+                        <span class="tech-tag">Pinecone</span>
+                        <span class="tech-tag">PyMuPDF</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">Pydantic</span>
                     </div>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-header">
-                        <div class="feature-icon">📝</div>
-                        <div class="feature-badge">Assessment</div>
-                    </div>
-                    <h3>Automated Quiz Generation</h3>
-                    <p>LLM-powered quiz creation with contextual MCQs and short-answer questions. Includes hint
-                        generation and semantic answer evaluation with 85% human expert agreement.</p>
-                    <div class="feature-specs">
-                        <span>• Contextual questions</span>
-                        <span>• LLM evaluation</span>
-                        <span>• Performance analytics</span>
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">httpx</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">Pandas</span>
                     </div>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-header">
-                        <div class="feature-icon">📊</div>
-                        <div class="feature-badge">Analytics</div>
-                    </div>
-                    <h3>Comprehensive Performance Metrics</h3>
-                    <p>Detailed learning analytics with visual representations including accuracy tracking, performance
-                        trends, and personalized insights for continuous improvement.</p>
-                    <div class="feature-specs">
-                        <span>• Visual dashboards</span>
-                        <span>• Performance tracking</span>
-                        <span>• Trend analysis</span>
+                <div class="tech-category">
+                    <h3>AI/ML</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Q-Learning</span>
+                        <span class="tech-tag">Thompson Sampling</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Vector Embeddings</span>
+                        <span class="tech-tag">GPT-4 Turbo</span>
+                        <span class="tech-tag">text-embedding-3-small</span>
                     </div>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-header">
-                        <div class="feature-icon">🎴</div>
-                        <div class="feature-badge">Study Tools</div>
-                    </div>
-                    <h3>Automated Study Material Generation</h3>
-                    <p>Intelligent generation of summaries (3 length options) and digital flashcards with categorical
-                        organization for optimized study sessions.</p>
-                    <div class="feature-specs">
-                        <span>• Multi-length summaries</span>
-                        <span>• Flashcard creation</span>
-                        <span>• Export capabilities</span>
+                <div class="tech-category">
+                    <h3>Infrastructure</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Pinecone Vector DB</span>
+                        <span class="tech-tag">Namespace Isolation</span>
+                        <span class="tech-tag">RESTful API</span>
+                        <span class="tech-tag">CORS</span>
                     </div>
                 </div>
             </div>
@@ -240,569 +185,167 @@
     </section>
 
     <!-- Architecture Section -->
-    <section id="architecture" class="section">
+    <section id="architecture" class="section section-alt">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">System Design</div>
-                <h2 class="section-title">Technical Architecture</h2>
-                <p class="section-description">
-                    Three-tier microservices architecture with separation of concerns and scalable design
-                </p>
-            </div>
-
-            <div class="architecture-layers">
-                <div class="architecture-layer">
-                    <h3 class="layer-title">Presentation Layer</h3>
-                    <div class="layer-content">
-                        <div class="layer-tech">
-                            <strong>Technology:</strong> Streamlit 1.52.1
-                        </div>
-                        <div class="layer-description">
-                            Multi-page web application with session state management, interactive UI components,
-                            and real-time data visualization using Matplotlib and Pandas.
-                        </div>
-                        <div class="layer-components">
-                            <span class="component-tag">Upload Interface</span>
-                            <span class="component-tag">Chat Interface</span>
-                            <span class="component-tag">Quiz Module</span>
-                            <span class="component-tag">Analytics Dashboard</span>
-                        </div>
+            <h2 class="section-title">System Architecture</h2>
+            <div class="architecture-diagram">
+                <div class="arch-flow">
+                    <div class="arch-step">
+                        <div class="arch-icon">📄</div>
+                        <h4>PDF Upload</h4>
+                        <p>User uploads PDF(s)</p>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">✂️</div>
+                        <h4>Text Extraction</h4>
+                        <p>PyMuPDF extracts text</p>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">🔪</div>
+                        <h4>Chunking</h4>
+                        <p>Hybrid chunking strategy</p>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">🧠</div>
+                        <h4>Embedding</h4>
+                        <p>OpenAI embeddings</p>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">💾</div>
+                        <h4>Vector Store</h4>
+                        <p>Pinecone indexing</p>
                     </div>
                 </div>
-
-                <div class="architecture-arrow">↓</div>
-
-                <div class="architecture-layer">
-                    <h3 class="layer-title">Application Layer</h3>
-                    <div class="layer-content">
-                        <div class="layer-tech">
-                            <strong>Technology:</strong> FastAPI 0.104.1
-                        </div>
-                        <div class="layer-description">
-                            RESTful API backend orchestrating RAG pipeline, content generation, and adaptive learning
-                            algorithms.
-                            Implements comprehensive error handling and input validation.
-                        </div>
-                        <div class="layer-components">
-                            <span class="component-tag">RAG Service</span>
-                            <span class="component-tag">Content Generator</span>
-                            <span class="component-tag">Adaptive Quiz Engine</span>
-                            <span class="component-tag">Vector Store Manager</span>
-                        </div>
+                <div class="arch-flow">
+                    <div class="arch-step">
+                        <div class="arch-icon">❓</div>
+                        <h4>User Query</h4>
+                        <p>Question/Request</p>
                     </div>
-                </div>
-
-                <div class="architecture-arrow">↓</div>
-
-                <div class="architecture-layer">
-                    <h3 class="layer-title">Data Layer</h3>
-                    <div class="layer-content">
-                        <div class="layer-tech">
-                            <strong>Technologies:</strong> Pinecone (Vector DB) + OpenAI API
-                        </div>
-                        <div class="layer-description">
-                            Serverless vector database with 1536-dimensional embeddings and cosine similarity metric.
-                            Namespace-based document isolation ensures session integrity.
-                        </div>
-                        <div class="layer-components">
-                            <span class="component-tag">Vector Storage</span>
-                            <span class="component-tag">Semantic Search</span>
-                            <span class="component-tag">GPT-4 Turbo</span>
-                            <span class="component-tag">Embeddings API</span>
-                        </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">🔍</div>
+                        <h4>Retrieval</h4>
+                        <p>Semantic search</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="pipeline-flow">
-                <h3 class="pipeline-title">RAG Pipeline Data Flow</h3>
-                <div class="pipeline-steps">
-                    <div class="pipeline-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <strong>Document Upload</strong>
-                            <p>PDF extraction via PyMuPDF</p>
-                        </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">🤖</div>
+                        <h4>Generation</h4>
+                        <p>LLM + Context</p>
                     </div>
-                    <div class="pipeline-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <strong>Text Processing</strong>
-                            <p>Hybrid chunking strategy</p>
-                        </div>
-                    </div>
-                    <div class="pipeline-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <strong>Vectorization</strong>
-                            <p>OpenAI embeddings (1536D)</p>
-                        </div>
-                    </div>
-                    <div class="pipeline-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <strong>Indexing</strong>
-                            <p>Pinecone vector storage</p>
-                        </div>
-                    </div>
-                    <div class="pipeline-step">
-                        <div class="step-number">5</div>
-                        <div class="step-content">
-                            <strong>Retrieval</strong>
-                            <p>Semantic similarity search</p>
-                        </div>
-                    </div>
-                    <div class="pipeline-step">
-                        <div class="step-number">6</div>
-                        <div class="step-content">
-                            <strong>Generation</strong>
-                            <p>Context-aware LLM response</p>
-                        </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">📤</div>
+                        <h4>Response</h4>
+                        <p>Formatted output</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Implementation Section -->
-    <section id="implementation" class="section section-alt">
+    <!-- Highlights Section -->
+    <section id="highlights" class="section">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">Technical Implementation</div>
-                <h2 class="section-title">Core Components</h2>
-            </div>
-
-            <div class="implementation-grid">
-                <div class="impl-card">
-                    <div class="impl-header">
-                        <h3>🎯 Component 1: Prompt Engineering</h3>
-                        <span class="impl-status">Required</span>
-                    </div>
-                    <div class="impl-content">
-                        <h4>Systematic Prompting Strategies</h4>
-                        <ul>
-                            <li><strong>Question Type Detection:</strong> Automatic classification into 7 categories
-                                (list, definition, comparison, how, why, what, general)</li>
-                            <li><strong>Dynamic Prompt Generation:</strong> Type-specific prompts with custom formatting
-                                instructions</li>
-                            <li><strong>Context Window Management:</strong> Token-aware chunk selection with ~4000 token
-                                limit</li>
-                            <li><strong>Intelligent Fallback:</strong> Dual-detection system (pre-query + post-query)
-                                with 93% accuracy</li>
-                        </ul>
-
-                        <h4>Implementation Metrics</h4>
-                        <div class="metrics-grid">
-                            <div class="metric-item">
-                                <div class="metric-value">7</div>
-                                <div class="metric-label">Question Types</div>
-                            </div>
-                            <div class="metric-item">
-                                <div class="metric-value">4000</div>
-                                <div class="metric-label">Token Limit</div>
-                            </div>
-                            <div class="metric-item">
-                                <div class="metric-value">93%</div>
-                                <div class="metric-label">Fallback Accuracy</div>
-                            </div>
-                        </div>
-                    </div>
+            <h2 class="section-title">Technical Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <h3>Prompt Engineering</h3>
+                    <ul>
+                        <li>Systematic prompting strategies with question-type detection</li>
+                        <li>Dynamic prompt generation based on query type</li>
+                        <li>Context management with token limits</li>
+                        <li>Response post-processing for better formatting</li>
+                    </ul>
                 </div>
-
-                <div class="impl-card">
-                    <div class="impl-header">
-                        <h3>🔍 Component 2: Retrieval-Augmented Generation</h3>
-                        <span class="impl-status">Required</span>
-                    </div>
-                    <div class="impl-content">
-                        <h4>Knowledge Base Construction</h4>
-                        <ul>
-                            <li><strong>Vector Database:</strong> Pinecone serverless with 1536-dimensional embeddings
-                            </li>
-                            <li><strong>Chunking Strategy:</strong> Hybrid approach (page-based + semantic) with
-                                metadata preservation</li>
-                            <li><strong>Ranking System:</strong> Multi-level ranking (similarity + length + quality)
-                            </li>
-                            <li><strong>Filtering Pipeline:</strong> Three-stage filtering (quality, relevance, context
-                                window)</li>
-                        </ul>
-
-                        <h4>Performance Metrics</h4>
-                        <div class="metrics-grid">
-                            <div class="metric-item">
-                                <div class="metric-value">90%</div>
-                                <div class="metric-label">Retrieval Relevance</div>
-                            </div>
-                            <div class="metric-item">
-                                <div class="metric-value">1024</div>
-                                <div class="metric-label">Chars/Chunk</div>
-                            </div>
-                            <div class="metric-item">
-                                <div class="metric-value">96%</div>
-                                <div class="metric-label">Partial Relevance</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="highlight-card">
+                    <h3>RAG Implementation</h3>
+                    <ul>
+                        <li>Vector storage and retrieval with Pinecone</li>
+                        <li>Hybrid chunking (semantic + page boundaries)</li>
+                        <li>Effective ranking and filtering mechanisms</li>
+                        <li>Namespace-based document isolation</li>
+                    </ul>
                 </div>
-
-                <div class="impl-card">
-                    <div class="impl-header">
-                        <h3>🤖 Additional: Adaptive Learning System</h3>
-                        <span class="impl-status impl-status-bonus">Innovation</span>
-                    </div>
-                    <div class="impl-content">
-                        <h4>Reinforcement Learning Algorithms</h4>
-                        <ul>
-                            <li><strong>Q-Learning Agent:</strong> Policy optimization with learning rate α=0.1,
-                                discount factor γ=0.9</li>
-                            <li><strong>Thompson Sampling:</strong> Bayesian bandit approach using Beta distributions
-                                for exploration-exploitation</li>
-                            <li><strong>Adaptive Manager:</strong> Orchestrates difficulty transitions based on
-                                performance trends</li>
-                            <li><strong>Reward Structure:</strong> Difficulty-scaled rewards (+0.50 to +1.00 for
-                                correct, -0.50 to -0.75 for incorrect)</li>
-                        </ul>
-
-                        <h4>Algorithm Performance</h4>
-                        <div class="metrics-grid">
-                            <div class="metric-item">
-                                <div class="metric-value">90%</div>
-                                <div class="metric-label">Convergence Rate</div>
-                            </div>
-                            <div class="metric-item">
-                                <div class="metric-value">85%</div>
-                                <div class="metric-label">Target Accuracy</div>
-                            </div>
-                            <div class="metric-item">
-                                <div class="metric-value">3</div>
-                                <div class="metric-label">Difficulty Levels</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="highlight-card">
+                    <h3>Adaptive Learning</h3>
+                    <ul>
+                        <li>Q-Learning for optimal difficulty selection</li>
+                        <li>Thompson Sampling for exploration-exploitation</li>
+                        <li>Real-time difficulty adjustment</li>
+                        <li>Reward-based performance tracking</li>
+                    </ul>
+                </div>
+                <div class="highlight-card">
+                    <h3>System Design</h3>
+                    <ul>
+                        <li>Microservices architecture (Backend + Frontend)</li>
+                        <li>RESTful API design</li>
+                        <li>Session-based document isolation</li>
+                        <li>Comprehensive error handling</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Results Section -->
-    <section id="results" class="section">
+    <!-- Demo Section -->
+    <section id="demo" class="section section-alt">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">Performance Analysis</div>
-                <h2 class="section-title">Results & Evaluation</h2>
-            </div>
-
-            <div class="results-grid">
-                <div class="results-category">
-                    <h3>System Performance</h3>
-                    <table class="results-table">
-                        <thead>
-                            <tr>
-                                <th>Operation</th>
-                                <th>Average Time</th>
-                                <th>Accuracy</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Chat Query</td>
-                                <td>3 seconds</td>
-                                <td>90%</td>
-                            </tr>
-                            <tr>
-                                <td>Quiz Generation (5Q)</td>
-                                <td>12 seconds</td>
-                                <td>92%</td>
-                            </tr>
-                            <tr>
-                                <td>Short Answer Eval</td>
-                                <td>2 seconds</td>
-                                <td>85%</td>
-                            </tr>
-                            <tr>
-                                <td>Summary Generation</td>
-                                <td>5-9 seconds</td>
-                                <td>96%</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <h2 class="section-title">Live Demo</h2>
+            <div class="demo-content">
+                <div class="demo-info">
+                    <h3>Try the Application</h3>
+                    <p>The application is deployed and ready to use. Upload a PDF, chat with it, generate quizzes, and
+                        experience the adaptive learning system.</p>
+                    <a href="https://your-app-url.onrender.com" class="btn btn-primary btn-large" target="_blank">Launch
+                        Application</a>
+                    <p class="demo-note">Note: Replace with your actual deployment URL</p>
                 </div>
-
-                <div class="results-category">
-                    <h3>Comparative Analysis</h3>
-                    <table class="results-table">
-                        <thead>
-                            <tr>
-                                <th>Metric</th>
-                                <th>This System</th>
-                                <th>Baseline</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Answer Retrieval</td>
-                                <td>3 seconds</td>
-                                <td>5-10 min</td>
-                            </tr>
-                            <tr>
-                                <td>Quiz Creation</td>
-                                <td>12 seconds</td>
-                                <td>30-45 min</td>
-                            </tr>
-                            <tr>
-                                <td>Document Accuracy</td>
-                                <td>90%</td>
-                                <td>40% (ChatGPT)</td>
-                            </tr>
-                            <tr>
-                                <td>Hallucination Rate</td>
-                                <td>5%</td>
-                                <td>25%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="achievements">
-                <h3>Key Achievements</h3>
-                <div class="achievement-cards">
-                    <div class="achievement-card">
-                        <div class="achievement-icon">⚡</div>
-                        <div class="achievement-text">
-                            <strong>60-360x Faster</strong>
-                            <p>Compared to traditional study methods</p>
-                        </div>
-                    </div>
-                    <div class="achievement-card">
-                        <div class="achievement-icon">🎯</div>
-                        <div class="achievement-text">
-                            <strong>90% Relevance</strong>
-                            <p>RAG retrieval accuracy on test queries</p>
-                        </div>
-                    </div>
-                    <div class="achievement-card">
-                        <div class="achievement-icon">🏆</div>
-                        <div class="achievement-text">
-                            <strong>85% Agreement</strong>
-                            <p>LLM evaluation vs human experts</p>
-                        </div>
-                    </div>
-                    <div class="achievement-card">
-                        <div class="achievement-icon">📈</div>
-                        <div class="achievement-text">
-                            <strong>98.5% Uptime</strong>
-                            <p>System reliability during testing</p>
-                        </div>
-                    </div>
+                <div class="demo-features">
+                    <h4>What You Can Do:</h4>
+                    <ul>
+                        <li>Upload PDF documents (up to 300 pages)</li>
+                        <li>Chat with your documents using RAG</li>
+                        <li>Generate adaptive competitive quizzes</li>
+                        <li>Create regular quizzes with hints</li>
+                        <li>Generate summaries and flashcards</li>
+                        <li>Continue with previously uploaded documents</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technology Stack -->
-    <section id="tech-stack" class="section section-alt">
+    <!-- Project Details Section -->
+    <section class="section">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">Technical Stack</div>
-                <h2 class="section-title">Technologies & Tools</h2>
-            </div>
-
-            <div class="tech-grid">
-                <div class="tech-category-card">
-                    <h3>🔧 Backend Framework</h3>
-                    <div class="tech-list">
-                        <div class="tech-item">
-                            <strong>FastAPI 0.104.1</strong>
-                            <p>High-performance async API framework with automatic OpenAPI documentation</p>
-                        </div>
-                        <div class="tech-item">
-                            <strong>Python 3.11</strong>
-                            <p>Modern Python with improved performance and type hints</p>
-                        </div>
-                        <div class="tech-item">
-                            <strong>Poetry</strong>
-                            <p>Dependency management and virtual environment handling</p>
-                        </div>
-                    </div>
+            <h2 class="section-title">Project Details</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Project Scope</h3>
+                    <p>Full-stack application with AI/ML integration, vector database, and adaptive learning algorithms.
+                        Built from scratch with clean architecture and best practices.</p>
                 </div>
-
-                <div class="tech-category-card">
-                    <h3>🎨 Frontend Framework</h3>
-                    <div class="tech-list">
-                        <div class="tech-item">
-                            <strong>Streamlit 1.52.1</strong>
-                            <p>Rapid web app development with built-in session management</p>
-                        </div>
-                        <div class="tech-item">
-                            <strong>Matplotlib</strong>
-                            <p>Data visualization for performance analytics</p>
-                        </div>
-                        <div class="tech-item">
-                            <strong>Pandas</strong>
-                            <p>Data processing and statistical analysis</p>
-                        </div>
-                    </div>
+                <div class="detail-card">
+                    <h3>Learning Outcomes</h3>
+                    <p>Demonstrated expertise in RAG systems, reinforcement learning, prompt engineering, vector
+                        databases, API design, and full-stack development.</p>
                 </div>
-
-                <div class="tech-category-card">
-                    <h3>🧠 AI/ML Stack</h3>
-                    <div class="tech-list">
-                        <div class="tech-item">
-                            <strong>LlamaIndex 0.10.68</strong>
-                            <p>RAG framework for document indexing and retrieval</p>
-                        </div>
-                        <div class="tech-item">
-                            <strong>OpenAI GPT-4 Turbo</strong>
-                            <p>Language model for generation and evaluation</p>
-                        </div>
-                        <div class="tech-item">
-                            <strong>text-embedding-3-small</strong>
-                            <p>1536-dimensional vector embeddings</p>
-                        </div>
-                    </div>
+                <div class="detail-card">
+                    <h3>Innovation</h3>
+                    <p>Combined RAG with adaptive learning algorithms (Q-Learning + Thompson Sampling) to create a
+                        personalized educational experience that adjusts to user performance.</p>
                 </div>
-
-                <div class="tech-category-card">
-                    <h3>💾 Data Infrastructure</h3>
-                    <div class="tech-list">
-                        <div class="tech-item">
-                            <strong>Pinecone</strong>
-                            <p>Serverless vector database with cosine similarity</p>
-                        </div>
-                        <div class="tech-item">
-                            <strong>PyMuPDF</strong>
-                            <p>PDF text extraction and processing</p>
-                        </div>
-                        <div class="tech-item">
-                            <strong>NumPy</strong>
-                            <p>Numerical computing for ML algorithms</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resources Section -->
-    <section id="resources" class="section">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">Project Resources</div>
-                <h2 class="section-title">Documentation & Links</h2>
-            </div>
-
-            <div class="resources-grid">
-                <div class="resource-card">
-                    <div class="resource-icon">📚</div>
-                    <h3>Complete Documentation</h3>
-                    <p>Comprehensive technical documentation including architecture, implementation details, and
-                        performance metrics.</p>
-                    <a href="project_documentation/FINAL_SUBMISSION_DOCUMENTATION.html" class="resource-link">View
-                        Documentation →</a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="resource-icon">💻</div>
-                    <h3>Source Code</h3>
-                    <p>Full source code with clean architecture, comprehensive comments, and setup instructions.</p>
-                    <a href="https://github.com/PK0024/RAG-Educational-Content-Generator" class="resource-link"
-                        target="_blank">Browse Code →</a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="resource-icon">🎥</div>
-                    <h3>Video Demonstration</h3>
-                    <p>10-minute walkthrough covering system demo, architecture, and technical insights.</p>
-                    <a href="#" class="resource-link">Watch Video →</a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="resource-icon">📖</div>
-                    <h3>Setup Guide</h3>
-                    <p>Detailed installation instructions for Mac, Windows, and Linux with troubleshooting.</p>
-                    <a href="project_documentation/SETUP_GUIDE.md" class="resource-link">Setup Instructions →</a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="resource-icon">🔬</div>
-                    <h3>Technical Analysis</h3>
-                    <p>In-depth analysis of core requirements, technical resources, and implementation coverage.</p>
-                    <a href="project_documentation/CORE_REQUIREMENTS.md" class="resource-link">View Analysis →</a>
-                </div>
-
-                <div class="resource-card">
-                    <div class="resource-icon">🚀</div>
-                    <h3>Deployment Guide</h3>
-                    <p>Instructions for deploying the application on various cloud platforms.</p>
-                    <a href="project_documentation/DEPLOYMENT_GUIDE.md" class="resource-link">Deploy Guide →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Academic Info Section -->
-    <section class="section section-dark">
-        <div class="container">
-            <div class="academic-info">
-                <div class="academic-details">
-                    <h2>Academic Context</h2>
-                    <div class="academic-grid">
-                        <div class="academic-item">
-                            <strong>Course:</strong>
-                            <p>Prompt Engineering & Generative AI</p>
-                        </div>
-                        <div class="academic-item">
-                            <strong>Institution:</strong>
-                            <p>Northeastern University</p>
-                        </div>
-                        <div class="academic-item">
-                            <strong>Program:</strong>
-                            <p>Master's in Information Systems</p>
-                        </div>
-                        <div class="academic-item">
-                            <strong>Instructor:</strong>
-                            <p>Professor Nik Bear Brown</p>
-                        </div>
-                        <div class="academic-item">
-                            <strong>Team Members:</strong>
-                            <p>Pranesh, Linata Deshmukh</p>
-                        </div>
-                        <div class="academic-item">
-                            <strong>Submission:</strong>
-                            <p>December 2024</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="requirements-met">
-                    <h3>Assignment Requirements</h3>
-                    <div class="requirement-list">
-                        <div class="requirement-item requirement-met">
-                            <span class="req-icon">✓</span>
-                            <span>Prompt Engineering (Systematic strategies, context management)</span>
-                        </div>
-                        <div class="requirement-item requirement-met">
-                            <span class="req-icon">✓</span>
-                            <span>RAG Implementation (Vector DB, chunking, ranking)</span>
-                        </div>
-                        <div class="requirement-item requirement-met">
-                            <span class="req-icon">✓</span>
-                            <span>GitHub Repository with complete source code</span>
-                        </div>
-                        <div class="requirement-item requirement-met">
-                            <span class="req-icon">✓</span>
-                            <span>Comprehensive PDF documentation</span>
-                        </div>
-                        <div class="requirement-item requirement-met">
-                            <span class="req-icon">✓</span>
-                            <span>Video demonstration (10 minutes)</span>
-                        </div>
-                        <div class="requirement-item requirement-met">
-                            <span class="req-icon">✓</span>
-                            <span>Web page portfolio (GitHub Pages)</span>
-                        </div>
-                    </div>
+                <div class="detail-card">
+                    <h3>Technical Challenges</h3>
+                    <p>Overcame namespace isolation, context window management, difficulty progression logic, and
+                        seamless integration of multiple AI services.</p>
                 </div>
             </div>
         </div>
@@ -813,30 +356,26 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Project Repository</h3>
-                    <p>Access the complete source code, documentation, and setup guides on GitHub.</p>
-                    <a href="https://github.com/PK0024/RAG-Educational-Content-Generator" class="footer-link"
-                        target="_blank">
-                        github.com/PK0024/RAG-Educational-Content-Generator
-                    </a>
+                    <h3>Project Links</h3>
+                    <ul>
+                        <li><a href="https://github.com/yourusername/RAG-Powered-Educational-Content-Generator"
+                                target="_blank">GitHub Repository</a></li>
+                        <li><a href="#demo">Live Demo</a></li>
+                        <li><a href="DEPLOYMENT_GUIDE.md" target="_blank">Deployment Guide</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Technologies Used</h3>
-                    <p>FastAPI • Streamlit • LlamaIndex • Pinecone • OpenAI GPT-4 • Q-Learning • Thompson Sampling •
-                        Python 3.11 • Poetry</p>
+                    <h3>Technologies</h3>
+                    <p>FastAPI • Streamlit • LlamaIndex • Pinecone • OpenAI • Q-Learning • Thompson Sampling</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Academic Project</h3>
-                    <p><strong>Northeastern University</strong></p>
-                    <p>Master's in Information Systems</p>
-                    <p>Generative AI Course - Fall 2024</p>
+                    <h3>Contact</h3>
+                    <p>Built as part of Semester 4 coursework</p>
+                    <p>Educational project showcasing RAG and adaptive learning</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2024 RAG-Powered Educational Content Generator | Pranesh & Linata Deshmukh | Northeastern
-                    University</p>
-                <p class="footer-disclaimer">Educational research project demonstrating RAG and adaptive learning
-                    technologies</p>
+                <p>&copy; 2024 RAG Educational Content Generator. Built with passion for education.</p>
             </div>
         </div>
     </footer>
