@@ -1,0 +1,134 @@
+*# ============================================
+# RAG Educational Content Generator
+# Custom .gitignore for this specific project
+# ============================================
+
+# ===== CRITICAL: API Keys and Secrets =====
+# NEVER commit these - they contain your API keys!
+.env
+backend/.env
+frontend/.env
+*.env
+.env.local
+.env.*.local
+secrets/
+*.key
+
+# ===== Python Virtual Environments =====
+# Poetry creates these - don't commit them!
+.venv/
+venv/
+ENV/
+env/
+backend/.venv/
+frontend/.venv/
+
+# ===== Python Cache and Compiled Files =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyc
+
+# ===== Poetry =====
+# Lock file - some teams commit this, some don't
+# Uncomment next line if you don't want to commit lock file
+# poetry.lock
+
+# ===== macOS Files =====
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ===== IDE and Editors =====
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Cursor AI
+.cursor/
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# ===== Logs =====
+*.log
+logs/
+log/
+*.log.*
+
+# ===== Temporary Files =====
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.~lock.*
+
+# ===== User Uploaded Files =====
+# Don't commit PDFs uploaded by users
+uploads/
+uploaded_pdfs/
+temp_uploads/
+*.pdf
+
+# EXCEPTION: Keep example PDFs for demo
+!examples/*.pdf
+!sample_data/*.pdf
+
+# ===== Test and Coverage =====
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+coverage.xml
+*.cover
+
+# ===== Jupyter Notebooks =====
+.ipynb_checkpoints
+
+# ===== Distribution / Build =====
+dist/
+build/
+*.egg-info/
+
+# ===== Project-Specific Temporary Data =====
+# Pinecone doesn't create local files, but just in case
+pinecone_data/
+*.index
+
+# Generated outputs
+outputs/
+generated/
+
+# Cache
+.cache/
+*.cache
+
+# ===== Keep These! =====
+# Example environment files are safe (no real keys)
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Example files and screenshots are safe
+!examples/
+!sample_data/
+
+# Documentation is safe
+!project_documentation/
+!docs/
+
+# ===== Optional: Large Media Files =====
+# Uncomment if you add large files later
+# *.mp4
+# *.avi
+# *.mov
