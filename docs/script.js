@@ -19,13 +19,13 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 50) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -35,7 +35,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
+
         const target = document.querySelector(targetId);
         if (target) {
             const offsetTop = target.offsetTop - 80;
@@ -43,7 +43,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 top: offsetTop,
                 behavior: 'smooth'
             });
-            
+
             // Close mobile menu if open
             if (navLinks && navLinks.classList.contains('active')) {
                 navLinks.classList.remove('active');
@@ -128,7 +128,7 @@ document.querySelectorAll('.stat-item').forEach(item => {
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const orbs = document.querySelectorAll('.gradient-orb');
-    
+
     orbs.forEach((orb, index) => {
         const speed = 0.5 + (index * 0.1);
         const yPos = -(scrolled * speed);
@@ -141,11 +141,11 @@ window.addEventListener('scroll', () => {
 // ============================================
 
 document.querySelectorAll('.tech-tag').forEach(tag => {
-    tag.addEventListener('mouseenter', function() {
+    tag.addEventListener('mouseenter', function () {
         this.style.transform = 'translateY(-2px) scale(1.05)';
     });
-    
-    tag.addEventListener('mouseleave', function() {
+
+    tag.addEventListener('mouseleave', function () {
         this.style.transform = 'translateY(0) scale(1)';
     });
 });
@@ -168,7 +168,7 @@ const navLinksArray = document.querySelectorAll('.nav-links a[href^="#"]');
 
 window.addEventListener('scroll', () => {
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -176,7 +176,7 @@ window.addEventListener('scroll', () => {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinksArray.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
@@ -203,7 +203,7 @@ if ('IntersectionObserver' in window) {
             }
         });
     });
-    
+
     document.querySelectorAll('img[data-src]').forEach(img => {
         imageObserver.observe(img);
     });
@@ -213,6 +213,6 @@ if ('IntersectionObserver' in window) {
 // Console Message
 // ============================================
 
-console.log('%c📚 Learnify', 'font-size: 20px; font-weight: bold; color: #0d9488;');
-console.log('%cRAG-Powered Educational Content Generator', 'font-size: 14px; color: #64748b;');
-console.log('%cBuilt with ❤️ by Linata Deshmukh & Pranesh Kannan', 'font-size: 12px; color: #94a3b8;');
+console.log('%c📚 Learnify', 'font-size: 20px; font-weight: bold; color: #1e40af;');
+console.log('%cRAG-Powered Educational Content Generator', 'font-size: 14px; color: #475569;');
+console.log('%cBuilt with ❤️ by Pranesh Kannan & Linata Deshmukh', 'font-size: 12px; color: #64748b;');
