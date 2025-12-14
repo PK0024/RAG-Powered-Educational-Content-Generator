@@ -1,6 +1,8 @@
 # Portfolio Website for RAG Educational Content Generator
 
-This is a static portfolio website showcasing the RAG-Powered Educational Content Generator project. It's designed to be hosted on **GitHub Pages** to demonstrate your work to potential employers.
+This is a static portfolio website showcasing the RAG-Powered Educational Content Generator project. It's designed to be hosted on **GitHub Pages** to demonstrate your work.
+
+**Project by:** Linata Deshmukh & Pranesh Kannan
 
 ## 🎯 Purpose
 
@@ -18,6 +20,26 @@ This portfolio website:
 - `script.js` - Interactive features and animations
 - `README.md` - This file
 
+## 📂 Project Structure
+
+This `docs/` folder is part of the main project repository:
+
+```
+RAG-Powered Educational Content Generator/
+├── backend/                    # FastAPI backend
+├── frontend/                   # Streamlit frontend
+├── docs/                       # This portfolio website (GitHub Pages)
+│   ├── index.html
+│   ├── styles.css
+│   ├── script.js
+│   └── README.md
+├── project_documentation/       # Project documentation
+│   └── DELIVERABLES.md         # Complete project deliverables
+├── README.md                   # Main project README
+├── RUN.md                      # Quick start guide
+└── SETUP_STEPS.md              # Detailed setup instructions
+```
+
 ## 🚀 Deployment to GitHub Pages
 
 ### Step 1: Create GitHub Repository
@@ -29,9 +51,15 @@ This portfolio website:
 
 ### Step 2: Upload Portfolio Files
 
+**Option A: If deploying from main repository (recommended)**
+- The `docs/` folder is already in your main repository
+- Simply enable GitHub Pages and select `/docs` folder as source
+
+**Option B: Separate repository**
+
 ```bash
-# Navigate to your portfolio directory
-cd portfolio
+# Navigate to your docs directory
+cd docs
 
 # Initialize git (if not already)
 git init
@@ -57,7 +85,7 @@ git push -u origin main
 3. Scroll down to **Pages** section (left sidebar)
 4. Under **Source**, select:
    - Branch: `main`
-   - Folder: `/ (root)` or `/portfolio` (if files are in portfolio folder)
+   - Folder: `/ (root)` or `/docs` (if files are in docs folder)
 5. Click **Save**
 6. Your site will be available at: `https://yourusername.github.io/repository-name/`
 
@@ -69,20 +97,23 @@ Before deploying, update these in `index.html`:
    ```html
    <a href="https://github.com/yourusername/RAG-Powered-Educational-Content-Generator">
    ```
+   Replace `yourusername` with your actual GitHub username
 
 2. **Live Demo URL:**
    ```html
    <a href="https://your-app-url.onrender.com">
    ```
+   Replace with your actual deployment URL (Render, Railway, etc.)
 
 3. **Contact Information:**
-   - Update footer with your details
+   - Already updated with: Linata Deshmukh & Pranesh Kannan
    - Add LinkedIn, GitHub links if desired
 
 4. **Screenshots/Demos:**
    - Add screenshots of your application
-   - Create a `images/` folder
+   - Create a `images/` folder in `docs/`
    - Add images to showcase features
+   - Update HTML to reference these images
 
 ## 🎨 Customization
 
@@ -183,5 +214,14 @@ The portfolio is fully responsive and works on:
 
 ---
 
-**Note**: This portfolio showcases your project. The actual application needs to be deployed separately (Render, Railway, etc.) as it requires server-side Python execution.
+## 📚 Related Documentation
+
+- **[DELIVERABLES.md](../project_documentation/DELIVERABLES.md)** - Complete project deliverables and documentation
+- **[README.md](../README.md)** - Main project overview and setup
+- **[SETUP_STEPS.md](../SETUP_STEPS.md)** - Detailed setup instructions
+- **[RUN.md](../RUN.md)** - Quick start guide
+
+---
+
+**Note**: This portfolio showcases your project. The actual application needs to be deployed separately (Render, Railway, etc.) as it requires server-side Python execution. The portfolio website itself can be hosted on GitHub Pages for free.
 

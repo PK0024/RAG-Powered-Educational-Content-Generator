@@ -1,2 +1,0 @@
-"""API layer for FastAPI routes."""
-
